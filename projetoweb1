@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>O que eu mais gosto em São Paulo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ADD8E6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #556b2f;
+            text-align: left;
+        }
+        .content, .sidebar {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .content img, .content h2 {
+            display: inline-block;
+            vertical-align: top;
+        }
+        .content img {
+            width: 80px;
+            height: auto;
+            margin-right: 15px;
+        }
+        .main {
+            display: flex;
+        }
+        .content {
+            flex: 1 1 60%;
+            margin-right: 20px;
+        }
+        .sidebar {
+            flex: 1 1 30%;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            counter-reset: item;
+        }
+        .sidebar ul li {
+            content: counter(item) ".";
+            counter-increment: item;
+            margin-bottom: 10px;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #8dbc4b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>O que eu mais gosto em São Paulo</h1>
+        <div class="main">
+            <div class="content">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOKMWQTTqEI1DeoAhu3b7P79HP4zsoXDWqOQ&s" alt="Avenida Paulista">
+                <h2>Passear na Avenida Paulista!</h2>
+                <p>
+                    Um dos principais centros financeiros da cidade, a Avenida Paulista
+                    também possui diversas opções de entretenimento. Endereço do Museu
+                    de Arte de São Paulo, <em>MASP</em>, do Teatro Gazeta e muitos outros,
+                    a região é de fácil acesso graças às diversas linhas de ônibus que
+                    cruzam a avenida e a linha de metrô que passa por baixo dela.
+                </p>
+                <p>
+                    A Avenida Paulista sempre é assunto. O que será que estão falando a
+                    respeito no <a href='https://twitter.com/#!/search/Avenida Paulista' target='_blank'>Twitter</a>?
+                </p>
+            </div>
+            <div class="sidebar">
+                <h2>Existem muitos outros lugares interessantes na cidade.</h2>
+                <ul>
+                    <li>1. O Mercado Municipal.</li>
+                    <li>2. A Sala São Paulo.</li>
+                    <li>3. Os estádios dos principais times de futebol da cidade.</li>
+                    <li>4. Diversos museus, como o Memorial da América Latina, Museu da Língua Portuguesa
+                    e o Museu do Ipiranga.</li>
+                    <li>5. E mais!</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmezhwcHbflxa6lbX9hy53HonQyaOzkfKxsHd_SIgT8hP2TXfEfjV-hF-l2A&s" alt="Vila Madalena">
+            <h2>Os bares da Vila Madalena</h2>
+            <p>
+                Depois de um dia de trabalho, nada melhor do que um bom chopp, um
+                petisco e uma conversa em uma mesa de bar. Opções de sobra na região
+                das ruas Aspicuelta, Fradique Coutinho e Wisard.
+            </p>
+            <p>
+                Veja quais os melhores bares e restaurantes da região no
+                <a href='http://vejasp.abril.com.br/busca?chn=bares&qu=&nbh=Pinheiros%20/%20Vila%20Madalena' target='_blank'>
+                Guia da VEJA São Paulo
+                </a>.
+            </p>
+        </div>
+        <div class="content">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSycmoTJgMYDZ-_eu8MmQC76PmA1Yy_AmKIlLOnNuKMS9l-xrCKoGSujYySLA&s" alt="Parque do Ibirapuera">
+            <h2>O Parque do Ibirapuera</h2>
+            <p>
+                Um dos cartões postais da cidade, o parque dispõe de mais de 1,5 km²
+                de área verde, lagos artificiais e pistas de cooper e ciclismo. E se
+                isso não fosse o suficiente, o parque costuma ser palco de diversos
+                eventos culturais ao longo do ano.
+            </p>
+            <p>
+                Veja no <a href='http://goo.gl/maps/HoH8' target='_blank'>mapa</a>
+                como chegar ao parque.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
